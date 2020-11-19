@@ -1,0 +1,111 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFB500;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    padding-bottom: 10px;
+    height: 200px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 180px;
+    margin-bottom: 20px;
+    background: #1F1F1F;
+    clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%);
+}
+label {
+    font-size: 1rem;
+    margin: 10px;
+}
+#movie-title {
+    font-size: 1rem;
+    padding: 5px;
+    margin: 50px 0 20px 0;
+    width: 200px;
+    height: 40px;
+    background: #F1F1F1;
+    color: #1F1F1F;
+    border-radius: 10px;
+    border: 5px solid #F1F1F1;
+}
+#valider {
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 20px 0;
+    background: #F1F1F1;
+    color: #1F1F1F;
+    border-radius: 10px;
+
+}
+#valider:hover {
+    background: lightgray;
+}
+#valider:active {
+    background: red;
+}
+
+main {
+    min-height: 300px;
+    background-image: url(movie.jpg);
+    background-position: center;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+/* resultat */
+.resultat {
+    background: rgb(241, 241, 241, .8);
+    padding: 10px;
+}
+.resultat img {
+    float: left;
+    margin: 20px;
+}
+.resultat ul {
+    padding: 20px;
+    list-style: none;
+}
+.resultat li {
+    margin: 10px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+.logo {
+    height: 150px;
+    width: auto;
+}
+@media (max-width: 650px) {
+    .resultat {
+        text-align: center;
+    }
+    .resultat img {
+        float: none;
+    }
+    .resultat li {
+        text-align: left;
+    }
+}
